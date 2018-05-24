@@ -89,6 +89,7 @@ class Pig(object):
 
         return new_weight
 
+
     def heavier_pig(self, other_pig):
         """
         Returns either this Pig object or the other given Pig object,
