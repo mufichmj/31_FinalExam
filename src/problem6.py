@@ -87,7 +87,17 @@ And this one for n=14:
     #   print Xs for the spaces until you figure out where the problem is
     #   (and then change the Xs back to spaces).
     # ------------------------------------------------------------------
+    for k in range(n):
+        for j in range(n - k):
+            print(' ', end='')
+        for h in range(k + 1):
+            print(n - h, end='')
+        for i in range(k + 2):
+            print('*', end='')
+        for a in range(n - k):
+            print(n - a, end='')
 
+        print()
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
