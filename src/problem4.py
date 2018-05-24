@@ -54,7 +54,7 @@ class Pig(object):
         # DONE: Implement and test this method.
 
         self.weight = weight
-        self.other_pig = 
+        self.other_pig =
 
     def get_weight(self):
         """ Returns this Pig's weight. """
