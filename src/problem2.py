@@ -265,17 +265,14 @@ def problem2b(sequence):
     #
     # return index
 
+    new = 0
+    place = 0
     for k in range(len(sequence)):
-        if sequence[k] < 0:
-            sequence[k] = sequence[k] * (-1)
-            sub_seq = sequence[k]
-            for j in range(len(sub_seq)):
-                if sub_seq[j] > sub_seq[j+1] and sub_seq[j] > sub_seq[j-1]:
-                    return j
-        elif sequence[k] > sequence[k + 1] and sequence[k] > sequence[k - 1]:
-            return k
+        if sequence[k] > new:
+            new = sequence[k]
+            place = k
 
-    return 'none'
+    return place
 
 
 def run_test_problem2c():
