@@ -139,29 +139,15 @@ def problem5(m, numbers1, numbers2):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-    # new_list = []
-    # for k in range(len(numbers1)):
-    #     for j in range(len(numbers2)):
-    #         if numbers1[k][j] == numbers2[j]:
-    #             numbers1[k][j] = new_list
-    #             new_list = new_list + 1
-    #
-    #     return new_list
 
     new_list = []
     for k in range(len(numbers1)):
-        if numbers1[k] == numbers2[k*3]:
-            new_list = new_list + [k] + [k*3]
+        if numbers1[k]*m == numbers2[k]:
+            new_list.append(numbers1[k])
+            new_list.append(numbers2[k])
 
     return new_list
 
-
-    # initial = 1
-    # for k in range(len(tuple_of_lists)):
-    #     for j in range(len(tuple_of_lists[k])):
-    #         if tuple_of_lists[k][j] == 0:
-    #             tuple_of_lists[k][j] = initial
-    #             initial = initial + 1
 
 ###############################################################################
 # Our tests use the following to print error messages in red.

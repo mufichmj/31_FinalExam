@@ -38,10 +38,11 @@ def main():
     print(p3.eat_for_a_year())  # Should print 365
 
     p4 = Pig(9)
-    print(p4.get_weight()  # Should print
+    other_pig.weight = 2
+    print(p4.heavier_pig()  # Should print
 
     p5 = Pig(9)
-    print(p5.new_pig())
+    print(p5.new_pig())  # Should print
 
 
 
