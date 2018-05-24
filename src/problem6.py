@@ -91,7 +91,7 @@ And this one for n=14:
         for j in range(n - k):
             print(' ', end='')
         for h in range(k + 1):
-            print(n - h, end='')
+            print(1 + h, end='')
         for i in range(k + 2):
             print('*', end='')
         for a in range(n - k):
