@@ -275,6 +275,7 @@ def problem2b(sequence):
     return place
 
 
+
 def run_test_problem2c():
     """ Tests the  problem2c   function. """
     ####################################################################
