@@ -266,8 +266,11 @@ def problem2b(sequence):
     # return index
 
     for k in range(len(sequence)):
-        if sequence[k] > sequence[k - 1]:
-            print
+        if sequence[k] < 0:
+            sequence[k] = sequence[k] * (-1)
+        if sequence[k] > sequence[k-1]:
+            return [k]
+
 
 def run_test_problem2c():
     """ Tests the  problem2c   function. """
