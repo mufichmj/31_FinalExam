@@ -110,15 +110,15 @@ def problem3(point, circle1, circle2, window):
     end3 = rg.Point(point.x, point.y)
 
     line1 = rg.Line(start1, end1)
-    line1.color = circle2.fill_color
+    line1.color = circle1.fill_color
     line1.attach_to(window)
 
     line2 = rg.Line(start2, end2)
-    line2.color = circle2.fill_color
+    line2.color = circle1.fill_color
     line2.attach_to(window)
 
     line3 = rg.Line(start3, end3)
-    line3.color = circle2.fill_color
+    line3.color = circle1.fill_color
     line3.attach_to(window)
 
     start4 = rg.Point(line1.get_midpoint().x, line1.get_midpoint().y)
