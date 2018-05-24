@@ -34,6 +34,15 @@ def main():
     p2 = Pig(9)
     print(p2.eat(6))   # Should print 15
 
+    p3 = Pig(9)
+    print(p3.eat_for_a_year())  # Should print 365
+
+    p4 = Pig(9)
+    print(p4.heavier_pig())  # Should print
+
+    p5 = Pig(9)
+    print(p5.new_pig())
+
 
 
 class Pig(object):
@@ -45,6 +54,7 @@ class Pig(object):
         # DONE: Implement and test this method.
 
         self.weight = weight
+        self.other_pig = 
 
     def get_weight(self):
         """ Returns this Pig's weight. """
@@ -73,12 +83,26 @@ class Pig(object):
         """
         # TODO: Implement and test this method.
 
+        # for k in range(365):
+        #     if self.weight < 365:
+        #         year_weight = year_weight + self.eat(k)
+        #
+        # return self.weight
+
+        after_year = self.eat(365)
+        return after_year
+
     def heavier_pig(self, other_pig):
         """
         Returns either this Pig object or the other given Pig object,
         whichever is heavier.
         """
         # TODO: Implement and test this method.
+
+        if other_pig.weight > self.weight:
+            return other_pig
+        else:
+            return self
 
     def new_pig(self, other_pig):
         """
@@ -87,6 +111,8 @@ class Pig(object):
         """
         # TODO: Implement and test this method.
 
+        new_pig = other_pig.weight
+        return new_pig
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
