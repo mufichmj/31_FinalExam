@@ -90,14 +90,14 @@ def problem1a(numbers):
       :type numbers:  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
     sum = 0
     for k in range(0, len(numbers), len(numbers) // 2):
         if type(numbers[k]) is int:
             sum = sum + numbers[k]
-    
+
     return sum
 
 
@@ -172,9 +172,15 @@ def problem1b(numbers):
       :type numbers:  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    sum = 0
+    for k in range(len(numbers) // 3, (len(numbers) // 3)*2):
+        if type(numbers[k]) is int:
+            sum = sum + numbers[k]
+
+    return sum
 
 
 ###############################################################################
