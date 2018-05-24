@@ -258,12 +258,16 @@ def problem2b(sequence):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-    index = sequence[0]
-    for k in range(len(sequence)):
-        if sequence[k**2] > index:
-            index = sequence[k]
+    # index = sequence[0]
+    # for k in range(len(sequence)):
+    #     if sequence[k**2] > index:
+    #         index = sequence[k]
+    #
+    # return index
 
-    return index
+    for k in range(len(sequence)):
+        if sequence[k] > sequence[k - 1]:
+            print
 
 def run_test_problem2c():
     """ Tests the  problem2c   function. """

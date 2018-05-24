@@ -38,7 +38,7 @@ def main():
     print(p3.eat_for_a_year())  # Should print 365
 
     p4 = Pig(9)
-    print(p4.heavier_pig())  # Should print
+    print(p4.get_weight()  # Should print
 
     p5 = Pig(9)
     print(p5.new_pig())
@@ -54,7 +54,6 @@ class Pig(object):
         # DONE: Implement and test this method.
 
         self.weight = weight
-        self.other_pig =
 
     def get_weight(self):
         """ Returns this Pig's weight. """
@@ -81,23 +80,20 @@ class Pig(object):
           -- eat 364 pounds of slop, then
           -- eat 365 pounds of slop.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
 
-        # for k in range(365):
-        #     if self.weight < 365:
-        #         year_weight = year_weight + self.eat(k)
-        #
-        # return self.weight
+        new_weight = 0
+        for k in range(365):
+            new_weight = new_weight + self.eat(1)
 
-        after_year = self.eat(365)
-        return after_year
+        return new_weight
 
     def heavier_pig(self, other_pig):
         """
         Returns either this Pig object or the other given Pig object,
         whichever is heavier.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
 
         if other_pig.weight > self.weight:
             return other_pig
@@ -109,7 +105,7 @@ class Pig(object):
         Returns a new Pig whose weight is the weight of the heavier
           of this Pig and the other_Pig.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
 
         new_pig = other_pig.weight
         return new_pig
