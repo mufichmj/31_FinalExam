@@ -420,7 +420,7 @@ def problem2c(x):
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
     number = x
-    for k in range(1000000):
+    for k in range():
         if is_prime(number) >= x:
             if is_prime(sum_of_digits(number)):
                 sum = sum + (x)
