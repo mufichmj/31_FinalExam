@@ -258,7 +258,12 @@ def problem2b(sequence):
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    index = sequence[0]
+    for k in range(len(sequence)):
+        if sequence[k**2] > index:
+            index = sequence[k]
 
+    return index
 
 def run_test_problem2c():
     """ Tests the  problem2c   function. """
@@ -401,8 +406,13 @@ def problem2c(x):
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    number = x
+    for k in range(1000000):
+        if is_prime(number) >= x:
+            if is_prime(sum_of_digits(number)):
+                sum = sum + (x)
 
-
+    return
 ###############################################################################
 # Our tests use the following to print error messages in red.
 # Do NOT change it.  You do NOT have to do anything with it.

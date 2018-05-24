@@ -2,9 +2,9 @@
 Final exam, problem 3.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  May 2018.
+         their colleagues and Mariah Mufich.  May 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 import time
@@ -96,7 +96,22 @@ def problem3(point, circle1, circle2, window):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
+    point.attach_to(window)
+    circle1.attach_to(window)
+    circle2.attach_to(window)
 
+    start1 = rg.Point(point.x, point.y)
+    end1 = rg.Point(circle1.center.x, circle1.center.y)
+
+    start2 = rg.Point(circle1.center.x, circle1.center.y)
+    end2 = rg.Point(circle2.center.x, circle2.center.y)
+
+    start3 = rg.Point(circle2.center.x, circle2.center.y)
+    end3 = rg.Point(point.x, point.y)
+    
+    line1 = rg.Line(start1, end1)
+    line2 = rg.Line(start2, end2)
+    line3 = rg.Line(start3, end3)
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
