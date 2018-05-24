@@ -268,8 +268,14 @@ def problem2b(sequence):
     for k in range(len(sequence)):
         if sequence[k] < 0:
             sequence[k] = sequence[k] * (-1)
-        if sequence[k] > sequence[k-1]:
-            return [k]
+            sub_seq = sequence[k]
+            for j in range(len(sub_seq)):
+                if sub_seq[j] > sub_seq[j+1] and sub_seq[j] > sub_seq[j-1]:
+                    return j
+        elif sequence[k] > sequence[k + 1] and sequence[k] > sequence[k - 1]:
+            return k
+
+    return 'none'
 
 
 def run_test_problem2c():
