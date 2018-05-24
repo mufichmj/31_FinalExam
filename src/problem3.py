@@ -121,7 +121,7 @@ def problem3(point, circle1, circle2, window):
     line3.color = circle2.fill_color
     line3.attach_to(window)
 
-    
+
     start4 = rg.Point(line1.get_midpoint().x, line1.get_midpoint().y)
     end4 = rg.Point(line2.get_midpoint().x, line2.get_midpoint().y)
 
@@ -132,8 +132,16 @@ def problem3(point, circle1, circle2, window):
     end6 = rg.Point(line1.get_midpoint().x, line1.get_midpoint().y)
 
     line4 = rg.Line(start4, end4)
+    line4.color = circle2.fill_color
+    line4.attach_to(window)
+
     line5 = rg.Line(start5, end5)
+    line5.color = circle2.fill_color
+    line5.attach_to(window)
+
     line6 = rg.Line(start6, end6)
+    line6.color = circle2.fill_color
+    line6.attach_to(window)
 
     window.render()
 
