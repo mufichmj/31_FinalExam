@@ -28,6 +28,12 @@ def main():
     #     -- Construct two Pig objects
     #     -- Call each method that you implement below.
     # -------------------------------------------------------------------------
+    p1 = Pig(9)
+    print(p1.get_weight())  # Should print 9
+
+    p2 = Pig(9)
+    print(p2.eat(6))   # Should print 15
+
 
 
 class Pig(object):
@@ -36,17 +42,24 @@ class Pig(object):
         What comes in:  The Pig's weight (in pounds).
         Side effects: Sets instance variables as needed by the other methods.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+
+        self.weight = weight
 
     def get_weight(self):
         """ Returns this Pig's weight. """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+
+        return self.weight
 
     def eat(self, pounds_of_slop):
         """
         Increments this Pig's weight by the given pounds_of_slop.
         """
-        # TODO: Implement and test this method.
+        # DONE: Implement and test this method.
+
+        incremented_weight = self.weight + pounds_of_slop
+        return incremented_weight
 
     def eat_for_a_year(self):
         """
