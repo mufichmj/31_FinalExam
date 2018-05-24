@@ -170,13 +170,13 @@ def problem2a(x, sequence):
       :type sequence:  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
     new_list = []
     for k in range(len(sequence)):
         if sequence[k] > x:
-            new_list = new_list + [k]
+            new_list = new_list + [sequence[k]]
 
     return new_list
 
