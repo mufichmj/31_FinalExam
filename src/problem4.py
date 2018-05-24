@@ -37,12 +37,12 @@ def main():
     p3 = Pig(9)
     print(p3.eat_for_a_year())  # Should print 365
 
-    p4 = Pig(9)
-    other_pig.weight = 2
-    print(p4.heavier_pig()  # Should print
-
-    p5 = Pig(9)
-    print(p5.new_pig())  # Should print
+    # p4 = Pig(9)
+    # other_pig.weight = 2
+    # print(p4.heavier_pig()  # Should print
+    #
+    # p5 = Pig(9)
+    # print(p5.new_pig())  # Should print
 
 
 
