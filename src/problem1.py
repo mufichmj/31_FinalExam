@@ -94,8 +94,11 @@ def problem1a(numbers):
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
     sum = 0
-    for k in range(len(numbers)):
-        if numbers[k] 
+    for k in range(0, len(numbers), len(numbers) // 2):
+        if type(numbers[k]) is int:
+            sum = sum + numbers[k]
+    
+    return sum
 
 
 def run_test_problem1b():
