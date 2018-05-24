@@ -108,10 +108,34 @@ def problem3(point, circle1, circle2, window):
 
     start3 = rg.Point(circle2.center.x, circle2.center.y)
     end3 = rg.Point(point.x, point.y)
-    
+
     line1 = rg.Line(start1, end1)
+    line1.color = circle2.fill_color
+    line1.attach_to(window)
+
     line2 = rg.Line(start2, end2)
+    line2.color = circle2.fill_color
+    line2.attach_to(window)
+
     line3 = rg.Line(start3, end3)
+    line3.color = circle2.fill_color
+    line3.attach_to(window)
+
+    
+    start4 = rg.Point(line1.get_midpoint().x, line1.get_midpoint().y)
+    end4 = rg.Point(line2.get_midpoint().x, line2.get_midpoint().y)
+
+    start5 = rg.Point(line2.get_midpoint().x, line2.get_midpoint().y)
+    end5 = rg.Point(line3.get_midpoint().x, line3.get_midpoint().y)
+
+    start6 = rg.Point(line3.get_midpoint().x, line3.get_midpoint().y)
+    end6 = rg.Point(line1.get_midpoint().x, line1.get_midpoint().y)
+
+    line4 = rg.Line(start4, end4)
+    line5 = rg.Line(start5, end5)
+    line6 = rg.Line(start6, end6)
+
+    window.render()
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
